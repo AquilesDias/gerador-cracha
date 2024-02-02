@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cracha" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="35f01ff6-3504-4e24-bc82-f00a3143b076">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="NAME" class="java.lang.String"/>
+	<parameter name="JOB_TITLE" class="java.lang.String"/>
+	<parameter name="NAME_COMPANY" class="java.lang.String"/>
+	<parameter name="PHOTO" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="ead533bf-80c4-4290-824a-f2eea31db6f7"/>
+				<staticText>
+					<reportElement x="20" y="20" width="375" height="43" forecolor="#FFFFFF" uuid="19dea2d7-a1e4-4ecb-8a77-0eaeff8f61a8">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Gerador de crachá]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1"/>
+	</pageHeader>
+	<detail>
+		<band height="442">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="3f9f5d6b-251b-48de-b17b-94a0177ccfb2"/>
+			</line>
+			<rectangle>
+				<reportElement x="148" y="30" width="242" height="390" uuid="cba59292-4c49-4162-bed6-a18de49d7dcd"/>
+			</rectangle>
+			<textField>
+				<reportElement x="180" y="320" width="180" height="30" uuid="74980766-a26f-44fd-b8d1-13274d8ee896"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="350" width="160" height="30" uuid="8fb2d08d-ad19-4465-918d-1197de5fb9eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{JOB_TITLE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="70" width="165" height="30" uuid="b0661d7e-eeb2-4522-8684-ad9cbbca9be5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{NAME_COMPANY}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="187" y="110" width="163" height="200" uuid="2cb786eb-2137-4005-ac9c-313834340e86"/>
+				<imageExpression><![CDATA[$P{PHOTO}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54"/>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
